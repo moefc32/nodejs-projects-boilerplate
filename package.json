@@ -1,0 +1,23 @@
+{
+  "name": "nodejs-projects-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@fastify/formbody": "^7.4.0",
+    "@fastify/multipart": "^7.6.0",
+    "@fastify/static": "^6.5.0",
+    "@fastify/view": "^7.1.0",
+    "axios": "^1.1.2",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "fastify": "^4.7.0"
+  }
+}
