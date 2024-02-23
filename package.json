@@ -1,15 +1,13 @@
 {
   "name": "nodejs-projects-boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "author": "Faizal Chan.",
+  "license": "MIT",
   "main": "src/app.js",
   "scripts": {
     "start": "node src/app.js",
     "dev": "nodemon src/app.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
   "dependencies": {
     "@fastify/formbody": "^7.4.0",
     "@fastify/multipart": "^7.6.0",
