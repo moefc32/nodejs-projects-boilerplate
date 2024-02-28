@@ -13,9 +13,16 @@
     "@fastify/multipart": "^7.6.0",
     "@fastify/static": "^6.5.0",
     "@fastify/view": "^7.1.0",
-    "axios": "^1.1.2",
+    "@popperjs/core": "^2.11.8",
+    "alpinejs": "^3.13.5",
+    "axios": "^1.6.7",
+    "bcrypt": "^5.1.1",
+    "bootstrap": "^5.3.3",
     "dotenv": "^16.0.3",
     "ejs": "^3.1.8",
-    "fastify": "^4.7.0"
+    "fastify": "^4.7.0",
+    "izitoast": "^1.4.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.3.0"
   }
 }
