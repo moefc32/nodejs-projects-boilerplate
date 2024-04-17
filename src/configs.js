@@ -10,5 +10,5 @@ module.exports = {
     MONGO_PORT: process.env.MONGO_PORT,
     MONGO_DB: process.env.MONGO_DB,
     JWT_SECRET: process.env.JWT_SECRET,
-    JWT_EXPIRATION: process.env.JWT_EXPIRATION || '1d'
+    JWT_EXPIRATION: process.env.JWT_EXPIRATION || '1d',
 }

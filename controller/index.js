@@ -3,20 +3,21 @@ const model = require('../model');
 
 module.exports = {
     healthCheck: async (req, res) => {
-        res.status(200).send({
+        return res.status(200).send({
             application: APP_NAME,
             message: 'Application is healthy.',
-            statusCode: 200,
         })
     },
     checkData: async (req, res) => {
-        res.status(200).send({
+        return res.status(200).send({
             application: APP_NAME,
             message: model.data,
-            statusCode: 200,
         })
     },
-    root: (req, res) => {
-        res.view('./view/html/index.ejs', { app_name: APP_NAME });
-    }
+    root: async (req, res) => {
+        return res.view('./view/html/index.ejs', { app_name: APP_NAME });
+    },
+    notFound: async function (req, res) {
+        return await res.status(404).view('./view/html/notfound.ejs', { app_name: APP_NAME });
+    },
 }
