@@ -15,9 +15,13 @@ module.exports = {
         })
     },
     root: async (req, res) => {
-        return await res.view('./view/html/index.ejs', { app_name: APP_NAME });
+        return await res.status(200).view('./view/html/index.ejs', {
+            app_name: APP_NAME,
+        });
     },
     notFound: async (req, res) => {
-        return await res.status(404).view('./view/html/notfound.ejs', { app_name: APP_NAME });
+        return await res.status(404).view('./view/html/notfound.ejs', {
+            app_name: APP_NAME,
+        });
     },
 }
