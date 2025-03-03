@@ -10,4 +10,4 @@ Boilerplate for Node.js projects
 - Feature 3
 
 ## Stack Used
-- [SvelteKit](https://svelte.dev/)
+- [Turborepo](https://turbo.build/)
