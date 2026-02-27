@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "target": "ES2021",
+        "module": "ES2022",
+        "moduleResolution": "node",
+        "types": ["bun-types"],
+        "allowJs": true,
+        "checkJs": false,
+        "noEmit": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "skipLibCheck": true,
+        "baseUrl": ".",
+        "paths": {
+            "$module/*": ["module/*"],
+            "$security/*": ["security/*"],
+            "$source/*": ["source/*"],
+            "$utility/*": ["utility/*"]
+        }
+    }
+}

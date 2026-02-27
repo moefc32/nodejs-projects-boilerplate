@@ -1,0 +1,27 @@
+{
+    "name": "boilerplate-service",
+    "private": true,
+    "version": "0.0.1",
+    "type": "module",
+    "scripts": {
+        "start": "bun source/app.ts",
+        "dev": "bun --watch source/app.ts",
+        "generate": "bunx prisma generate",
+        "migrate": "bunx prisma migrate dev"
+    },
+    "devDependencies": {
+        "bun-types": "latest",
+        "prisma": "^7.4.2"
+    },
+    "dependencies": {
+        "@elysiajs/bearer": "^1.4.3",
+        "@elysiajs/cors": "^1.4.1",
+        "@elysiajs/jwt": "^1.4.1",
+        "@prisma/adapter-mariadb": "^7.4.2",
+        "@prisma/client": "^7.4.2",
+        "bcrypt": "^6.0.0",
+        "elysia": "latest",
+        "elysia-helmet": "^3.0.0",
+        "elysia-rate-limit": "^4.5.0"
+    }
+}
