@@ -1,0 +1,19 @@
+{
+    "name": "boilerplate-service",
+    "private": true,
+    "version": "0.0.1",
+    "type": "module",
+    "scripts": {
+        "start": "bun source/app.ts",
+        "dev": "bun --watch source/app.ts"
+    },
+    "devDependencies": {
+        "bun-types": "latest"
+    },
+    "dependencies": {
+        "@elysiajs/cors": "^1.4.1",
+        "elysia": "latest",
+        "elysia-helmet": "^3.0.0",
+        "elysia-rate-limit": "^4.5.0"
+    }
+}
