@@ -1,0 +1,27 @@
+{
+    "name": "boilerplate-service",
+    "private": true,
+    "version": "0.0.1",
+    "type": "module",
+    "scripts": {
+        "start": "bun source/app.js",
+        "dev": "bun --watch source/app.js",
+        "setup": "bun provision/setup.js",
+        "db:generate": "bunx drizzle-kit generate --config=drizzle.config.js",
+        "db:migrate": "bunx drizzle-kit migrate --config=drizzle.config.js",
+        "db:push": "bunx drizzle-kit push"
+    },
+    "devDependencies": {
+        "drizzle-kit": "^0.31.10"
+    },
+    "dependencies": {
+        "@elysiajs/cors": "^1.4.1",
+        "@elysiajs/static": "^1.4.7",
+        "better-auth": "^1.6.2",
+        "drizzle-orm": "^0.45.2",
+        "elysia": "latest",
+        "elysia-helmet": "^3.1.0",
+        "elysia-rate-limit": "^4.5.1",
+        "mysql2": "^3.22.0"
+    }
+}
